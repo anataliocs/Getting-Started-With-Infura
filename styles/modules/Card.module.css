@@ -1,0 +1,63 @@
+.card_border {
+  @apply bg-border-gradient-to-b rounded-lg p-px shadow-custom;
+}
+
+.card {
+  @apply bg-gradient-to-b from-darkGray to-transparent rounded-lg backdrop-blur-xl;
+}
+
+.card__content {
+  @apply flex flex-col items-start justify-center px-4 py-12 tablet:px-12 max-w-2xl mx-auto;
+}
+
+.card__title {
+  @apply mt-3 mb-8 text-xl tablet:text-2xl flex;
+}
+
+.card__text {
+  @apply max-w-xl text-2xl tablet:text-3xl;
+}
+
+.card__input {
+  @apply mb-8 w-full;
+}
+
+.card__button {
+  @apply mx-auto;
+}
+
+.card__form {
+  @apply flex flex-col w-full gap-6 mb-8 overflow-hidden;
+}
+
+.card__error {
+  @apply animate-fade absolute bottom-36 text-red-600;
+}
+
+.card__input1_label {
+  @apply bg-[#161616];
+}
+
+.card__input2_label {
+  @apply bg-[#0D0D0D];
+}
+
+.checkMark {
+  @apply flex items-center justify-center w-6 h-6 ml-3 text-black rounded-full bg-success;
+}
+
+.readOnly__group {
+  @apply flex flex-col w-full gap-6 mb-8 overflow-hidden;
+}
+
+.helpText {
+  @apply mt-1;
+}
+
+.errorMessage {
+  @apply z-40 mt-4 text-primary tablet:max-w-2xl text-center mx-auto;
+}
+
+.errorMessage__link {
+  @apply underline underline-offset-1;
+}

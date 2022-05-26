@@ -1,0 +1,23 @@
+.label {
+  @apply text-xs uppercase opacity-70;
+}
+
+.container {
+  @apply flex items-center h-5 gap-2 leading-none;
+}
+
+.dots {
+  @apply tracking-widest;
+}
+
+.value {
+  @apply truncate;
+}
+
+.copy__button {
+  @apply flex-shrink-0;
+}
+
+.check__icon {
+  @apply text-success;
+}

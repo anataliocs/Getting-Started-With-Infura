@@ -1,0 +1,41 @@
+{
+  "name": "consensys.demos",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@headlessui/react": "^1.5.0",
+    "@metamask/logo": "^3.1.1",
+    "@openzeppelin/contracts": "^4.6.0",
+    "@truffle/contract": "^4.5.7",
+    "@truffle/hdwallet-provider": "^2.0.7",
+    "@typescript-eslint/eslint-plugin": "^5.22.0",
+    "ipfs-http-client": "^56.0.2",
+    "next": "12.1.4",
+    "react": "18.0.0",
+    "react-dom": "18.0.0",
+    "web3": "^1.7.3"
+  },
+  "devDependencies": {
+    "@types/node": "17.0.23",
+    "@types/react": "17.0.43",
+    "@types/react-dom": "17.0.14",
+    "autoprefixer": "^10.4.4",
+    "axios": "^0.26.1",
+    "dotenv-flow": "^3.2.0",
+    "eslint": "8.12.0",
+    "eslint-config-next": "12.1.4",
+    "postcss": "^8.4.12",
+    "tailwindcss": "^3.0.23",
+    "typescript": "4.6.3",
+    "zustand": "^3.7.1"
+  },
+  "resolutions": {
+    "@types/react": "17.0.43"
+  }
+}

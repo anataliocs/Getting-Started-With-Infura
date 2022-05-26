@@ -1,0 +1,37 @@
+.image_wrapper {
+  @apply absolute inset-0 z-[-1];
+}
+
+.home h1 {
+  @apply text-5xl tablet:text-7xl;
+}
+
+.home h2 {
+  @apply max-w-xl mt-16 text-3xl tablet:text-5xl;
+}
+
+.home p {
+  @apply max-w-xl mt-4 text-base tablet:text-lg;
+}
+
+.home ul {
+  @apply max-w-xl mt-4 ml-8 text-base tablet:text-lg;
+}
+
+.home ul li {
+  @apply list-disc;
+}
+
+.home ol {
+  @apply max-w-xl mt-4 ml-4 text-base tablet:text-lg;
+}
+
+.home ol li {
+  @apply mb-2 list-decimal;
+}
+
+.home code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    'Liberation Mono', 'Courier New', monospace;
+  @apply px-2 py-1 text-sm text-opacity-100 border rounded w-fit bg-darkGray bg-opacity-70 border-white/20 whitespace-nowrap;
+}

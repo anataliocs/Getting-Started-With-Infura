@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* @import url('../public/fonts/LLAkkurat-LightWeb/css/stylesheet.css');
+  @import url('../public/fonts/LLAkkurat-RegularWeb/css/stylesheet.css');
+  @import url('../public/fonts/LLAkkuratMonoWeb/css/stylesheet.css');
+  @import url('../public/fonts/LLAkkurat-RegularOTStd/css/stylesheet.css'); */
+  @font-face {
+    font-family: 'Lineto Akkurat';
+    src: url('/fonts/LLAkkurat-LightWeb/css/fonts/lineto-akkurat-light.woff')
+      format(woff);
+    font-weight: 400;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Lineto Akkurat';
+    src: url('/fonts/LLAkkurat-RegularWeb/css/fonts/lineto-akkurat-regular.woff')
+      format(woff);
+    font-weight: 700;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Lineto Akkurat Mono';
+    src: url('/fonts/LLAkkuratMonoWeb/css/fonts/lineto-akkuratmono-regular.woff')
+      format(woff);
+    font-weight: 400;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Lineto Akkurat';
+    src: url('/fonts/LLAkkurat-LightOTStd/AkkuratStd-Light.otf')
+      format('opentype');
+    font-weight: 400;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Lineto Akkurat';
+    src: url('/fonts/LLAkkurat-RegularOTStd/css/fonts/AkkuratStd-Regular.otf')
+      format('opentype');
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  html,
+  body {
+    font-family: 'Lineto Akkurat';
+  }
+
+  body {
+    @apply bg-black text-white;
+  }
+
+  a {
+    @apply outline-none rounded-sm focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-black;
+  }
+}

@@ -1,0 +1,83 @@
+.ipfs__card {
+  @apply w-full;
+}
+
+.ipfs__content-wrap {
+  @apply px-4 py-12 tablet:px-12 max-w-2xl mx-auto;
+}
+
+.ipfs__drop-box-text {
+  @apply w-[100%] h-[100%] flex flex-col justify-center items-center;
+}
+
+.ipfs__embed {
+  background: white;
+}
+
+.ipfs__error-message {
+  @apply z-40 mt-4 text-primary tablet:max-w-2xl text-center mx-auto;
+}
+
+.ipfs__grid-data--left {
+  @apply w-[200px] text-ellipsis overflow-hidden mr-10 whitespace-nowrap;
+}
+
+.ipfs__header {
+  @apply text-xl font-semibold mb-8 tablet:text-2xl;
+}
+
+.ipfs__help-text {
+  @apply mt-1;
+}
+
+.ipfs__hr {
+  @apply h-0 border-b-[1px] mt-10 border-[#ffffff40]
+}
+
+.ipfs__image-details {
+  @apply flex flex-col
+}
+
+.ipfs__image-details--columns {
+  @apply flex flex-col mb-6
+}
+
+.ipfs__image-details--rows {
+  @apply flex flex-row justify-start mb-6
+}
+
+.ipfs__image-preview {
+  @apply bg-cover w-[115px] h-[115px] rounded-[4px] mb-8;
+}
+
+.ipfs__input-row {
+  @apply mb-8 w-full;
+}
+
+.ipfs__main {
+  @apply flex min-h-screen flex-col items-center text-xl text-white;
+}
+
+.ipfs__meta-buttons {
+  @apply w-[55px] relative flex flex-row justify-between right-[auto] tablet:absolute tablet:right-[-65px];
+}
+
+.ipfs__meta-result-row {
+  @apply flex flex-row;
+}
+
+.ipfs__subheader {
+  @apply text-lg mb-4;
+}
+
+.ipfs__data-header {
+  @apply text-xs uppercase opacity-70 mb-px;
+}
+
+.ipfs__primary-btn {
+  @apply m-auto block mt-12;
+}
+
+.ipfs__upload-btn--disabled {
+  @apply pointer-events-none opacity-50;
+}

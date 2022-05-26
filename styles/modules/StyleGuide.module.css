@@ -1,0 +1,23 @@
+.style_guide {
+  @apply container p-8;
+}
+
+.style_guide__header {
+  @apply text-4xl;
+}
+
+.style_guide__section {
+  @apply mt-8;
+}
+
+.style_guide__section_header {
+  @apply text-2xl mb-6;
+}
+
+.style_guide__inputForm {
+  @apply max-w-[38rem];
+}
+
+.style_guide__section li {
+  @apply mb-2;
+}

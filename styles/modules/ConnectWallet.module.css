@@ -1,0 +1,51 @@
+.card {
+  @apply w-full;
+}
+
+.card__content {
+  @apply flex flex-col items-center justify-center px-4 py-12 text-center;
+}
+
+.card__title {
+  @apply mt-3 mb-6 text-3xl tablet:text-5xl;
+}
+
+.card__title_connected {
+  @apply mt-10 mb-16 text-3xl tablet:text-5xl;
+}
+
+.card__text {
+  @apply max-w-xl text-2xl tablet:leading-tight tablet:text-3xl;
+}
+
+.card__balance_label {
+  @apply mt-2 text-xl tablet:text-2xl;
+}
+
+.card__balance_value {
+  @apply flex mt-2 text-3xl tablet:text-5xl;
+}
+
+.card__balance_ethIcon {
+  @apply h-8 tablet:h-12 mr-4;
+}
+
+.card__next_button {
+  @apply mt-12;
+}
+
+.connect_button {
+  @apply block mx-auto mt-12;
+}
+
+.errorMessage {
+  @apply z-40 mt-4 text-primary tablet:max-w-2xl text-center mx-auto;
+}
+
+.errorMessage__link {
+  @apply underline underline-offset-1;
+}
+
+.bold {
+  @apply font-bold;
+}

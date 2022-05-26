@@ -1,0 +1,40 @@
+/* Primary Button */
+
+.primary_button {
+  @apply block rounded-full w-fit min-w-[12.5rem] py-4 px-12 bg-white hover:bg-primary transition-all
+  text-sm uppercase text-center text-black font-bold
+  disabled:cursor-not-allowed disabled:opacity-40 disabled:hover:bg-white
+  outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-black;
+}
+
+/* Icon Button */
+
+.icon_button {
+  @apply bg-white rounded-full w-8 h-8 text-sm
+  uppercase flex flex-col justify-center items-center
+  text-black font-bold hover:bg-primary transition-all
+  outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-black;
+}
+
+.icon_button__flat {
+  @apply bg-transparent hover:bg-slate-700 transition-all;
+}
+
+/* Connect Button */
+.connect_button {
+  @apply w-full rounded-lg px-0 py-9 tablet:max-w-md tablet:px-[7.5rem]
+  text-2xl uppercase leading-none text-primary
+  bg-[#EBEBEB]/10 hover:bg-[#EBEBEB]/[8%] bg-border-gradient-to-b shadow-custom backdrop-blur-2xl
+  outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-black
+  disabled:hover:bg-[#EBEBEB]/10 disabled:cursor-not-allowed;
+}
+
+/* Settings Button */
+.settings__button {
+  @apply p-1 rounded-md text-sm leading-none items-center uppercase whitespace-nowrap flex-nowrap flex text-[#00FFA3]
+  outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-black;
+}
+
+.settings__button_infoIcon {
+  @apply mr-2;
+}

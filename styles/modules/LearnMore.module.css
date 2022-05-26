@@ -1,0 +1,15 @@
+.learn-more {
+  @apply w-[50%] mx-auto mt-32;
+}
+
+.learn-more__title {
+  @apply text-3xl text-center;
+}
+
+.learn-more__container {
+  @apply flex justify-between mt-12;
+}
+
+.learn-more__list > * + *{
+  @apply mt-8;
+}

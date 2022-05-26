@@ -1,0 +1,34 @@
+/* Navbar */
+.navbar {
+  @apply flex justify-between w-full px-8 py-8;
+}
+
+.logo {
+  @apply h-5 w-auto;
+}
+
+.logo__link {
+  @apply h-5 w-auto cursor-pointer;
+}
+
+/* Truncated Address */
+.address {
+  @apply hidden tablet:flex text-sm leading-none items-center uppercase whitespace-nowrap flex-nowrap;
+}
+
+.address__label {
+  @apply mr-2;
+}
+
+/* Wallet Balance */
+.walletBalance {
+  @apply hidden tablet:flex text-sm leading-none items-center uppercase whitespace-nowrap flex-nowrap;
+}
+
+.walletBalance__ethIcon {
+  @apply ml-2 h-4;
+}
+
+.walletBalance__balance {
+  @apply ml-1;
+}

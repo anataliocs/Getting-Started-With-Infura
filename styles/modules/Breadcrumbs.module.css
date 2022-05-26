@@ -1,0 +1,19 @@
+.breadcrumbs {
+  @apply flex text-lg mb-2;
+}
+
+.breadcrumb {
+  @apply text-[#999999];
+}
+
+.breadcrumb__active {
+  @apply text-white;
+}
+
+.breadcrumb:visited {
+  @apply text-primary;
+}
+
+.slash {
+  @apply mx-1;
+}

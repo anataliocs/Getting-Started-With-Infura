@@ -1,0 +1,23 @@
+.mint__content-wrap {
+  @apply px-4 py-12 tablet:px-12 max-w-2xl mx-auto;
+}
+
+.mint__error-message {
+  @apply z-40 mt-4 text-primary tablet:max-w-2xl text-center mx-auto;
+}
+
+.mint__header {
+  @apply text-xl font-semibold mb-8 tablet:text-2xl;
+}
+
+.mint__input-row {
+  @apply mb-8 w-full;
+}
+
+.mint__primary-btn {
+  @apply m-auto block mt-12;
+}
+
+.mint__result-detail {
+  @apply mb-3;
+}

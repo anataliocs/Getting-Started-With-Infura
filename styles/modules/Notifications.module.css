@@ -1,0 +1,55 @@
+.main {
+  @apply container mx-auto;
+}
+
+.notification_module {
+  @apply relative;
+}
+
+.bell {
+  @apply flex items-center;
+}
+
+.bell_btn {
+  @apply hover:bg-[#003e27] focus:bg-[#003e27] p-[5px];
+}
+
+.bell_count {
+  @apply flex justify-center items-center animate-bounce pointer-events-none absolute top-[15%] right-[23%] w-[9px] h-[9px] rounded-full bg-primary text-white text-center text-[7px];
+}
+
+.card_container {
+  @apply flex flex-col items-center absolute top-[150%] right-[-80px];
+}
+
+.card_container > * + * {
+  @apply mt-4;
+}
+
+.card_wrapper {
+  @apply animate-fade z-10;
+}
+
+.card {
+  @apply z-10 bg-[#212121] px-[1.1rem] py-[0.8rem] rounded-[0.5rem] shadow-lg border-[1px] border-[#494949];
+}
+
+.card_message {
+  @apply text-[11px] whitespace-nowrap;
+}
+
+.transaction {
+  @apply flex mt-3;
+}
+
+.transaction > * + * {
+  @apply ml-[2rem];
+}
+
+.transaction_label {
+  @apply text-[10px] uppercase opacity-70;
+}
+
+.transaction_value {
+  @apply whitespace-nowrap text-[10px] uppercase;
+}

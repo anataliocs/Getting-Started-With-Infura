@@ -1,0 +1,23 @@
+.modal {
+  @apply animate-fadeinfast  absolute inset-0 min-h-screen h-full overflow-auto;
+}
+
+.overlay {
+  @apply animate-fadeinfast fixed inset-0 backdrop-blur-sm;
+}
+
+.container {
+  @apply absolute flex w-full max-w-2xl px-4 top-8 tablet:top-30 left-1/2 -translate-x-1/2;
+}
+
+.card {
+  @apply animate-fadeinfast w-full mx-auto;
+}
+
+.content {
+  @apply w-full px-4 py-20 tablet:px-20;
+}
+
+.close_button {
+  @apply absolute top-7 right-7;
+}

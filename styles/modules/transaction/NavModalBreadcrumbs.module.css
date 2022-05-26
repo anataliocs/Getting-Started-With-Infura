@@ -1,0 +1,27 @@
+.main {
+  @apply px-4 my-4 tablet:mt-8 max-w-4xl mx-auto;
+}
+
+.nav__content {
+  @apply flex gap-16;
+}
+
+.settings__container {
+  @apply flex flex-col gap-8;
+}
+
+.settings__heading {
+  @apply text-3xl;
+}
+
+.settings__documentation_grid {
+  @apply grid grid-cols-1 tablet:grid-cols-2 gap-y-4;
+}
+
+.settings__documentation_link {
+  @apply flex items-center gap-2 text-primary;
+}
+
+.settings__documentation_icon {
+  @apply flex-shrink-0 h-4;
+}

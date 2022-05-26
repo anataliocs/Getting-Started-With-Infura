@@ -1,0 +1,22 @@
+.main {
+  @apply px-4 mx-auto my-4 tablet:mt-6 tablet:px-4 desktop:mt-8 desktop:px-16 max-w-7xl;
+}
+.main__no_nav {
+  @apply px-4 mx-auto my-4 tablet:mt-20 tablet:px-4 desktop:mt-16 desktop:px-16 max-w-7xl;
+}
+
+.card {
+  @apply w-full max-w-none;
+}
+
+.card__content {
+  @apply flex flex-col items-start justify-center px-4 py-12 tablet:p-20 desktop:p-36;
+}
+
+.card__link {
+  @apply flex items-center mt-4 text-lg;
+}
+
+.card__note {
+  @apply px-2 py-1 my-2 text-base border-l-2 w-fit border-white/20;
+}

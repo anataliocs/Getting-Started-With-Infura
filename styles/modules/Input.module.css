@@ -1,0 +1,25 @@
+.container {
+  @apply relative pt-1;
+}
+
+.inputBorder {
+  @apply relative flex items-center w-full h-12 border border-white rounded focus-within:ring-1 focus-within:ring-primary focus-within:border-primary;
+}
+
+.label {
+  @apply absolute inline-block px-1 -mt-px text-xs font-medium uppercase -top-2 left-3;
+}
+
+.input {
+  @apply block w-full ml-4 pr-2 text-sm placeholder-white bg-transparent truncate border-0 desktop:text-base placeholder:opacity-60 focus:ring-0 focus:outline-none;
+}
+
+.helperText {
+  @apply relative mt-2 ml-4 text-sm text-white/60;
+}
+
+.select {
+  @apply block w-full h-full pl-3 pr-8 outline-none bg-transparent appearance-none bg-no-repeat;
+  background-image: url("data:image/svg+xml, %3Csvg width='15' height='9' viewBox='0 0 15 9' fill='none' xmlns='http://www.w3.org/2000/svg' %3E%3Cpath d='m6.308 7.792-6-6A1.05 1.05 0 1 1 1.792.308L7.05 5.565 12.307.308a1.05 1.05 0 0 1 1.486 1.484l-6 6a1.05 1.05 0 0 1-1.485 0Z' fill='%23FF6B4A' /%3E%3C/svg%3E");
+  background-position: right 1rem center;
+}
