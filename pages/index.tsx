@@ -26,7 +26,7 @@ const Home: NextPage = () => {
               <p>
                 Learn how to use the Infura products to help build your next
                 web3 application. We will guide you through how to set up an
-                Infura project, connect to MetaMask, upload to IPFS, and mint an
+                Infura project, <a href="https://metamask.io/">connect to MetaMask</a>, upload to IPFS, and mint an
                 NFT.
               </p>
               <h2>Send Transaction</h2>

@@ -82,6 +82,14 @@ module.exports = {
         ),
       network_id: 4,
     },
+    goerli: {
+      provider: () =>
+          new HDWalletProvider(
+              mnemonic,
+              `https://goerli.infura.io/v3/${PROJECT_ID}`
+          ),
+      network_id: 5,
+    },
     // Useful for private networks
     // private: {
     // provider: () => new HDWalletProvider(mnemonic, `https://network.io`),

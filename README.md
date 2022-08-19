@@ -1,24 +1,26 @@
-# Consensys Sample Projects
+# Getting Started with Infura Sample Projects
 
 - Sample Project 1 - Send Transaction
 - Sample Project 2 - IPFS
 - Sample Project 3 - Notifications
 - Sample Project 4 - Minting an NFT
 
-## Run Locally
+[Companion Article](https://blog.infura.io/post/getting-started-with-infura-28e41844cc89)
 
-### 1. Intallation
+## Run Project Locally
+
+### 1. Installation
 
 Clone the project
 
 ```bash
-  git clone https://github.com/mondorobot/consensys.demos.git
+  git clone git@github.com:anataliocs/Getting-Started-With-Infura.git
 ```
 
 Go to the project directory
 
 ```bash
-  cd consensys.demos
+  cd Getting-Started-With-Infura
 ```
 
 Install dependencies
@@ -39,13 +41,13 @@ You'll need to [sign up](https://infura.io/register) for an Infura account and c
 
 Add your Infura project IDs and Secrets to the `.env.local` file.
 
-We'll be using the Rinkeby testnet so that we can see how the Infura API works without using real ETH.
+We'll be using the Goerli testnet.
 
 ```bash
   # .env.local
 
   # Send Transaction Variables
-  NEXT_PUBLIC_ETHEREUM_NETWORK=rinkeby
+  NEXT_PUBLIC_ETHEREUM_NETWORK=goerli
   NEXT_PUBLIC_INFURA_PROJECT_ID=
   NEXT_PUBLIC_INFURA_PROJECT_SECRET=
 
@@ -56,7 +58,7 @@ We'll be using the Rinkeby testnet so that we can see how the Infura API works w
 
   # Minting Variables
   WALLET_MNEMONIC=
-  NEXT_PUBLIC_MINTING_ETHEREUM_NETWORK=rinkeby
+  NEXT_PUBLIC_MINTING_ETHEREUM_NETWORK=goerli
   NEXT_PUBLIC_MINTING_INFURA_PROJECT_ID=
   NEXT_PUBLIC_SMART_CONTRACT_ADDRESS=
 ```
@@ -73,9 +75,9 @@ In this project the user will connect their MetaMask wallet, send a transaction,
 
 ### 1 - Fund Your Wallet With Testnet Ether
 
-In your MetaMask wallet, switch to the `Rinkeby Test Network` (you may have to click "show/hide test networks" and toggle the setting to see the Rinkeby network)
+In your MetaMask wallet, switch to the `Goerli Test Network` (you may have to click "show/hide test networks" and toggle the setting to see the Goerli network)
 
-Go to https://faucets.chain.link/rinkeby, connect your wallet, and then request the test ETH be sent to your account. You may have to request testnet ETH multiple times to get enough to cover the gas fees.
+Go to https://faucet.paradigm.xyz/, connect your wallet, and then request the test ETH be sent to your account.
 
 ### 2 - Connect Wallet
 

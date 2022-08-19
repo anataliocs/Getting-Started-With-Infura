@@ -76,7 +76,7 @@ const IPFSUploadForm = ({
       setIsLoading(true);
       const objectResponse = await ipfs_add(fileData);
       if (!objectResponse) {
-        throw 'Faild to upload object';
+        throw 'Failed to upload object';
       }
 
       const metaObject: IpfsMetaObject | undefined = buildMetaObject(
