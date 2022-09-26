@@ -41,10 +41,16 @@ You'll need to [sign up](https://infura.io/register) for an Infura account and c
 
 Add your Infura project IDs and Secrets to the `.env.local` file.
 
-We'll be using the Goerli testnet.
+We'll be using the [Goerli](https://goerli.etherscan.io/) testnet.
 
-```bash
-  # .env.local
+Install dotenv:
+```
+npm i dotenv
+```
+
+Setup your .env file:
+
+```
 
   # Send Transaction Variables
   NEXT_PUBLIC_ETHEREUM_NETWORK=goerli
@@ -71,7 +77,7 @@ We'll be using the Goerli testnet.
 
 # Sample Project 1 - Send Transaction
 
-In this project the user will connect their MetaMask wallet, send a transaction, and then review a transaction, all using the Infura API.
+In this project the user will connect their MetaMask wallet, send a transaction, and then review a transaction, all using the [Infura](https://infura.io) API.
 
 ### 1 - Fund Your Wallet With Testnet Ether
 
