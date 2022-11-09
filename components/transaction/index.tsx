@@ -25,28 +25,20 @@ export const TransactionSettingsModal = ({
       isOpen={settingsModalIsOpen}
       setIsOpen={setSettingsModalIsOpen}
       title="Settings"
-      description="Project settings. Current network, project ID, project secret, and documentation links."
+      description="Project settings. Current network, project api key, and documentation links."
     >
       <div className={styles.settings__container}>
         <h2 className={styles.settings__heading}>Connection Info</h2>
-        {process.env.NEXT_PUBLIC_ETHEREUM_NETWORK && (
+        {process.env.NEXT_PUBLIC_WEB3_TEST_ETHEREUM_NETWORK && (
           <ReadOnly
             label="Ethereum Network"
-            value={process.env.NEXT_PUBLIC_ETHEREUM_NETWORK}
+            value={process.env.NEXT_PUBLIC_WEB3_TEST_ETHEREUM_NETWORK}
           />
         )}
-        {process.env.NEXT_PUBLIC_INFURA_PROJECT_ID && (
-          <ReadOnly
-            label="Project ID"
-            value={process.env.NEXT_PUBLIC_INFURA_PROJECT_ID}
-            hideable
-            copyable
-          />
-        )}
-        {process.env.NEXT_PUBLIC_INFURA_PROJECT_SECRET && (
+        {process.env.NEXT_PUBLIC_WEB3_INFURA_API_KEY && (
           <ReadOnly
             label="Project Secret"
-            value={process.env.NEXT_PUBLIC_INFURA_PROJECT_SECRET}
+            value={process.env.NEXT_PUBLIC_WEB3_INFURA_API_KEY}
             hideable
             copyable
           />

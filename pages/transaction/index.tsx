@@ -48,7 +48,7 @@ const Home: NextPage = () => {
               <h2>What You'll Do</h2>
               <ol>
                 <li>
-                  Sign up <Link href="https://infura.io/register">here</Link>{' '}
+                  Sign up <Link href="https://infura.io/register?utm_source=github&utm_medium=devcommunity&utm_campaign=2022_Jul_devrel-sample-projects_content_content">here</Link>{' '}
                   for a free Infura account and create an Ethereum project and
                   IPFS project. You'll need your project id's for the Infura API
                   requests.
@@ -60,7 +60,7 @@ const Home: NextPage = () => {
                 </li>
                 <li>
                   Fund your wallet with some testnet ETH. In your MetaMask
-                  wallet, switch to the <code>Rinkeby Test Network</code> (you
+                  wallet, switch to the <code>Goerli Test Network</code> (you
                   may have to click 'show/hide test networks' and toggle the
                   setting to see the Rinkeby network). Go to this{' '}
                   <Link href="https://support.mycrypto.com/how-to/getting-started/where-to-get-testnet-ether/">

@@ -54,7 +54,7 @@ class SubscribeService implements SubscribeServiceInterface {
   constructor() {
     this.web3 = new Web3(
       new Web3.providers.WebsocketProvider(
-        `wss://${process.env.NEXT_PUBLIC_ETHEREUM_NETWORK}.infura.io/ws/v3/${process.env.NEXT_PUBLIC_INFURA_PROJECT_ID}`,
+        `wss://${process.env.NEXT_PUBLIC_ETHEREUM_NETWORK}.infura.io/ws/v3/${process.env.WEB3_INFURA_API_KEY}`,
         { reconnect: { maxAttempts: 3, auto: true, delay: 1000 } }
       )
     );

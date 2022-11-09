@@ -22,11 +22,13 @@
 //
 // const fs = require('fs');
 // const mnemonic = fs.readFileSync(".secret").toString().trim();
+// eslint-disable-next-line @typescript-eslint/no-var-requires
 const HDWalletProvider = require('@truffle/hdwallet-provider');
 
+// eslint-disable-next-line @typescript-eslint/no-var-requires
 require('dotenv-flow').config();
 const mnemonic = process.env.WALLET_MNEMONIC;
-const PROJECT_ID = process.env.NEXT_PUBLIC_MINTING_INFURA_PROJECT_ID;
+const PROJECT_API_KEY = process.env.NEXT_PUBLIC_WEB3_INFURA_API_KEY;
 
 module.exports = {
   /**
@@ -62,33 +64,15 @@ module.exports = {
     // },
     // Useful for deploying to a public network.
     // NB: It's important to wrap the provider as a function.
-    ropsten: {
-      provider: () =>
-        new HDWalletProvider(
-          mnemonic,
-          `https://ropsten.infura.io/v3/${PROJECT_ID}`
-        ),
-      network_id: 3, // Ropsten's id
-      // gas: 5500000,        // Ropsten has a lower block limit than mainnet
-      // confirmations: 2,    // # of confs to wait between deployments. (default: 0)
-      // timeoutBlocks: 200,  // # of blocks before a deployment times out  (minimum/default: 50)
-      // skipDryRun: true     // Skip dry run before migrations? (default: false for public nets )
-    },
-    rinkeby: {
-      provider: () =>
-        new HDWalletProvider(
-          mnemonic,
-          `https://rinkeby.infura.io/v3/${PROJECT_ID}`
-        ),
-      network_id: 4,
-    },
     goerli: {
       provider: () =>
           new HDWalletProvider(
               mnemonic,
-              `https://goerli.infura.io/v3/${PROJECT_ID}`
+              `https://goerli.infura.io/v3/${PROJECT_API_KEY}`
           ),
       network_id: 5,
+      timeoutBlocks: 200,
+      skipDryRun:true,
     },
     // Useful for private networks
     // private: {

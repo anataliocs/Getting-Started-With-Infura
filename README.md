@@ -54,8 +54,7 @@ Setup your .env file:
 
   # Send Transaction Variables
   NEXT_PUBLIC_ETHEREUM_NETWORK=goerli
-  NEXT_PUBLIC_INFURA_PROJECT_ID=
-  NEXT_PUBLIC_INFURA_PROJECT_SECRET=
+  WEB3_INFURA_API_KEY=
 
   # IPFS Variables
   NEXT_PUBLIC_INFURA_IPFS_ENDPOINT=
@@ -166,15 +165,14 @@ In this project, you will subscribe to a ETH address and recieve notifications f
 
 ### 1 - Project setup
 
-- Follow the primary application setup and fill in these env variables. Network should be `rinkeby`
+- Follow the primary application setup and fill in these env variables. Network should be `goerli`
 
   ```bash
     NEXT_PUBLIC_ETHEREUM_NETWORK=rinkeby
-    NEXT_PUBLIC_INFURA_PROJECT_ID=
-    NEXT_PUBLIC_INFURA_PROJECT_SECRET=
+    WEB3_INFURA_API_KEY=
   ```
 
-- Install and setup a Metamask account, switch network to `rinkeby`
+- Install and setup a Metamask account, switch network to `goerli`
 - Install project dependencies
 
   ```bash
