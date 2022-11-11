@@ -34,12 +34,12 @@ Install dependencies
 Create environment variables file
 
 ```bash
-  cp .env .env.local
+  cp .env template.env
 ```
 
 You'll need to [sign up](https://infura.io/register) for an Infura account and create an Ethereum project and an IPFS project.
 
-Add your Infura project IDs and Secrets to the `.env.local` file.
+Add your Infura project IDs and Secrets to the `.env` file.
 
 We'll be using the [Goerli](https://goerli.etherscan.io/) testnet.
 
@@ -115,7 +115,6 @@ In this project the user will upload a png/jpeg image and metadata json to IPFS,
 Add the values from your Infura dashboard for these three environment variables.
 
 ```bash
-  # .env.local
 
   # IPFS Variables
   NEXT_PUBLIC_INFURA_IPFS_ENDPOINT=
@@ -168,7 +167,7 @@ In this project, you will subscribe to a ETH address and recieve notifications f
 - Follow the primary application setup and fill in these env variables. Network should be `goerli`
 
   ```bash
-    NEXT_PUBLIC_ETHEREUM_NETWORK=rinkeby
+    NEXT_PUBLIC_ETHEREUM_NETWORK=goerli
     WEB3_INFURA_API_KEY=
   ```
 
@@ -215,11 +214,9 @@ In this project the user will deploy a smart contract using Truffle, upload to I
 
 ### 1 - Fund your wallet
 
-In your MetaMask wallet, switch to the `Rinkeby Test Network` (you may have to click "show/hide test networks" and toggle the setting to see the Rinkeby network)
+In your MetaMask wallet, switch to the `Goerli Test Network` (you may have to click "show/hide test networks" and toggle the setting to see the Goerli network)
 
-Go to https://faucets.chain.link/rinkeby, connect your wallet, and then request the test ETH be sent to your account
-
-Note that if you previously sent test ETH to your wallet on the Ropsten network, it will not be available to you on the Rinkeby network.
+Go to https://faucet.paradigm.xyz/, connect your wallet, and then request the test ETH
 
 ### 2 - Deploy a Smart Contract
 
@@ -232,11 +229,10 @@ Note that if you previously sent test ETH to your wallet on the Ropsten network,
 2. Add your wallet mnemonic (the twelve-word phrase the wallet uses to generate public/private key pairs) and your Infura project ID for an Ethereum project (this can be the same project ID as the Send Transaction Project) to your environment variables. We'll use the rinkeby network for this example so you can preview your minted nft on OpenSea Testnets.
 
    ```bash
-   #.env.local
 
    # Minting Variables
    WALLET_MNEMONIC=
-   NEXT_PUBLIC_MINTING_ETHEREUM_NETWORK=rinkeby
+   NEXT_PUBLIC_MINTING_ETHEREUM_NETWORK=goerli
    NEXT_PUBLIC_MINTING_INFURA_PROJECT_ID=
    ```
 
@@ -257,17 +253,16 @@ Note that if you previously sent test ETH to your wallet on the Ropsten network,
 5. Migrate the smart contract onto the chain by running
 
    ```bash
-   truffle migrate --network rinkeby
+   truffle migrate --network goerli
    ```
 
    **IMPORTANT:** After your migration completes, copy the `contract address` in the cli output and add it to your environment variables
 
    ```bash
-   #.env.local
 
    # Minting Variables
    WALLET_MNEMONIC=
-   NEXT_PUBLIC_MINTING_ETHEREUM_NETWORK=rinkeby
+   NEXT_PUBLIC_MINTING_ETHEREUM_NETWORK=goerli
    NEXT_PUBLIC_MINTING_INFURA_PROJECT_ID=
    NEXT_PUBLIC_SMART_CONTRACT_ADDRESS=
    ```
