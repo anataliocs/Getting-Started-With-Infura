@@ -53,19 +53,18 @@ Setup your .env file:
 ```
 
   # Send Transaction Variables
-  NEXT_PUBLIC_ETHEREUM_NETWORK=goerli
-  WEB3_INFURA_API_KEY=
+  NEXT_PUBLIC_WEB3_TEST_ETHEREUM_NETWORK=goerli
+  NEXT_PUBLIC_WEB3_INFURA_API_KEY=[Your WEB3 Infura Project]
 
   # IPFS Variables
-  NEXT_PUBLIC_INFURA_IPFS_ENDPOINT=
-  NEXT_PUBLIC_INFURA_IPFS_PROJECT_ID=
-  NEXT_PUBLIC_INFURA_IPFS_PROJECT_SECRET=
+  NEXT_PUBLIC_INFURA_IPFS_ENDPOINT=https://ipfs.infura.io:5001
+  NEXT_PUBLIC_INFURA_IPFS_PROJECT_ID=[Your IPFS Infura Project ID]
+  NEXT_PUBLIC_INFURA_IPFS_PROJECT_SECRET=[Your IPFS Infura Project Secret]
 
   # Minting Variables
   WALLET_MNEMONIC=
-  NEXT_PUBLIC_MINTING_ETHEREUM_NETWORK=goerli
-  NEXT_PUBLIC_MINTING_INFURA_PROJECT_ID=
-  NEXT_PUBLIC_SMART_CONTRACT_ADDRESS=
+  NEXT_PUBLIC_MINTING_INFURA_PROJECT_ID=[Your WEB3 Infura Project]
+  NEXT_PUBLIC_SMART_CONTRACT_ADDRESS=[The hash of the deployed contract on goerli]
 ```
 
 ### 3. Run the Project
@@ -167,8 +166,8 @@ In this project, you will subscribe to a ETH address and recieve notifications f
 - Follow the primary application setup and fill in these env variables. Network should be `goerli`
 
   ```bash
-    NEXT_PUBLIC_ETHEREUM_NETWORK=goerli
-    WEB3_INFURA_API_KEY=
+  NEXT_PUBLIC_WEB3_TEST_ETHEREUM_NETWORK=goerli
+  NEXT_PUBLIC_WEB3_INFURA_API_KEY=[Your WEB3 Infura Project]
   ```
 
 - Install and setup a Metamask account, switch network to `goerli`
@@ -184,7 +183,7 @@ In this project, you will subscribe to a ETH address and recieve notifications f
   yarn dev
   ```
 
-- Navigate to Notifications demo
+- Navigate to Notifications demo page
 
   ```bash
   http://localhost:3000/notifications
@@ -231,9 +230,8 @@ Go to https://faucet.paradigm.xyz/, connect your wallet, and then request the te
    ```bash
 
    # Minting Variables
-   WALLET_MNEMONIC=
-   NEXT_PUBLIC_MINTING_ETHEREUM_NETWORK=goerli
-   NEXT_PUBLIC_MINTING_INFURA_PROJECT_ID=
+    WALLET_MNEMONIC=
+    NEXT_PUBLIC_MINTING_INFURA_PROJECT_ID=[Your WEB3 Infura Project]
    ```
 
    **IMPORTANT:** Be careful not to share or commit your wallet mnemonic, it can be used to access your wallet accounts and their contents.
@@ -262,7 +260,6 @@ Go to https://faucet.paradigm.xyz/, connect your wallet, and then request the te
 
    # Minting Variables
    WALLET_MNEMONIC=
-   NEXT_PUBLIC_MINTING_ETHEREUM_NETWORK=goerli
    NEXT_PUBLIC_MINTING_INFURA_PROJECT_ID=
    NEXT_PUBLIC_SMART_CONTRACT_ADDRESS=
    ```
