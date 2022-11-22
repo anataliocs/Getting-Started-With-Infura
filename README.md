@@ -34,7 +34,7 @@ Install dependencies
 Create environment variables file
 
 ```bash
-  cp .env template.env
+  cp template.env .env
 ```
 
 You'll need to [sign up](https://infura.io/register) for an Infura account and create an Ethereum project and an IPFS project.
