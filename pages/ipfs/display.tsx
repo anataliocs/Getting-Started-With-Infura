@@ -220,7 +220,7 @@ const Display: NextPage = () => {
             file view on IPFS
           </p>
           <Link
-            href={`https://ipfs.infura.io/ipfs/${getAttributeValue(
+            href={`https://chris-anatalio.infura-ipfs.io/ipfs/${getAttributeValue(
               'objectHash'
             )}`}
             target="_blank"
