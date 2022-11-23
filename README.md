@@ -5,7 +5,7 @@
 - Sample Project 3 - Notifications
 - Sample Project 4 - Minting an NFT
 
-[Companion Article](https://blog.infura.io/post/getting-started-with-infura-28e41844cc89)
+[Getting Started with Infura Article](https://blog.infura.io/post/getting-started-with-infura-28e41844cc89)
 
 ## Run Project Locally
 
@@ -37,7 +37,7 @@ Create environment variables file
   cp template.env .env
 ```
 
-You'll need to [sign up](https://infura.io/register) for an Infura account and create an Ethereum project and an IPFS project.
+You'll need to [sign up](https://app.infura.io/register?utm_source=github&utm_medium=devcommunity&utm_campaign=2022_Nov_github-devrel-poc-apps_tutorial_content) for an Infura account and create an Ethereum project and an IPFS project.
 
 Add your Infura project IDs and Secrets to the `.env` file.
 
@@ -225,7 +225,7 @@ Go to https://faucet.paradigm.xyz/, connect your wallet, and then request the te
 
    The truffle project has already been initialized so you'll see `contracts/`, `migrations/`, and `truffle-config.js` already in the project structure.
 
-2. Add your wallet mnemonic (the twelve-word phrase the wallet uses to generate public/private key pairs) and your Infura project ID for an Ethereum project (this can be the same project ID as the Send Transaction Project) to your environment variables. We'll use the rinkeby network for this example so you can preview your minted nft on OpenSea Testnets.
+2. Add your wallet mnemonic (the twelve-word phrase the wallet uses to generate public/private key pairs) and your Infura project ID for an Ethereum project (this can be the same project ID as the Send Transaction Project) to your environment variables. We'll use the goerli network for this example so you can preview your minted nft on OpenSea Testnets.
 
    ```bash
 

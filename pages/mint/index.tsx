@@ -39,7 +39,7 @@ const Home: NextPage = () => {
               <h2>What You'll Do</h2>
               <ol>
                 <li>
-                  Sign up <Link href="https://infura.io/register">here</Link>{' '}
+                  Sign up <Link href="https://app.infura.io/register?utm_source=github&utm_medium=devcommunity&utm_campaign=2022_Nov_github-devrel-poc-apps_tutorial_content">here</Link>{' '}
                   for a free Infura account and create an Ethereum project.
                   You'll need your project id for the Infura API requests.
                 </li>
@@ -50,10 +50,10 @@ const Home: NextPage = () => {
                 </li>
                 <li>
                   For this project, you'll need a MetaMask wallet on the{' '}
-                  <code>Rinkeby Test Network</code> funded with some{' '}
+                  <code>Goerli Test Network</code> funded with some{' '}
                   <Link
                     target="_blank"
-                    href="https://faucets.chain.link/rinkeby"
+                    href="https://goerli-faucet.mudit.blog/?__cf_chl_tk=XldAqBU.zw8AEgAx1fl94upLkcvF8SKjiI.QKkBklHc-1669245985-0-gaNycGzNCmU"
                   >
                     testnet ETH
                   </Link>

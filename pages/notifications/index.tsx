@@ -66,9 +66,9 @@ const Notifications: NextPage = () => {
                 </li>
                 <li>
                   Fund your wallet with some testnet ETH. In your MetaMask
-                  wallet, switch to the <code>Rinkeby Test Network</code> (you
+                  wallet, switch to the <code>Goerli Test Network</code> (you
                   may have to click 'show/hide test networks' and toggle the
-                  setting to see the Rinkeby network). Go to this{' '}
+                  setting to see the Goerli network). Go to this{' '}
                   <Link href="https://support.mycrypto.com/how-to/getting-started/where-to-get-testnet-ether/">
                     testnet faucet
                   </Link>

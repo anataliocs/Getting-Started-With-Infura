@@ -154,7 +154,7 @@ const StyleGuidePage: NextPage = () => {
             <SelectInput
               label="Select Network"
               id="network"
-              options={['Ethereum', 'Ropsten', 'Rinkeby', 'Polygon']}
+              options={['Ethereum', 'Goerli', 'Polygon']}
             />
           </form>
         </section>
