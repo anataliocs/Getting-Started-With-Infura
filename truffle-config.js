@@ -64,13 +64,13 @@ module.exports = {
     // },
     // Useful for deploying to a public network.
     // NB: It's important to wrap the provider as a function.
-    goerli: {
+    sepolia: {
       provider: () =>
           new HDWalletProvider(
               mnemonic,
-              `https://goerli.infura.io/v3/${PROJECT_API_KEY}`
+              `https://sepolia.infura.io/v3/${PROJECT_API_KEY}`
           ),
-      network_id: 5,
+      network_id: 11155111,
       timeoutBlocks: 200,
       skipDryRun:true,
     },
