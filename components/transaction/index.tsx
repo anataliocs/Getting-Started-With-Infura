@@ -54,12 +54,12 @@ export const TransactionSettingsModal = ({
             Send a Transaction Tutorial
           </Link>
           <Link
-            href="https://support.mycrypto.com/how-to/getting-started/where-to-get-testnet-ether/"
+            href="https://www.infura.io/faucet"
             target="_blank"
             className={`group hover-within:text-white ${styles.settings__documentation_link}`}
           >
             <Document className={styles.settings__documentation_icon} />
-            Test ETH Faucet
+            Infura Testnet ETH Faucet
           </Link>
           <Link
             href="https://docs.infura.io/infura/networks/ethereum/json-rpc-methods/eth_getbalance"

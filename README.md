@@ -213,9 +213,9 @@ In this project the user will deploy a smart contract using Truffle, upload to I
 
 ### 1 - Fund your wallet
 
-In your MetaMask wallet, switch to the `Goerli Test Network` (you may have to click "show/hide test networks" and toggle the setting to see the Goerli network)
+In your MetaMask wallet, switch to the `Sepolia Test Network` (you may have to click "show/hide test networks" and toggle the setting to see the Goerli network)
 
-Go to https://faucet.paradigm.xyz/, connect your wallet, and then request the test ETH
+Go to https://www.infura.io/faucet, enter in your wallet address, and then request the test ETH
 
 ### 2 - Deploy a Smart Contract
 
