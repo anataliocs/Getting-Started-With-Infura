@@ -81,7 +81,7 @@ In this project the user will connect their MetaMask wallet, send a transaction,
 
 In your MetaMask wallet, switch to the `Goerli Test Network` (you may have to click "show/hide test networks" and toggle the setting to see the Goerli network)
 
-Go to https://faucet.paradigm.xyz/, connect your wallet, and then request the test ETH be sent to your account.
+Go to our free Infura Faucet, https://www.infura.io/faucet, connect your wallet, and then request the test ETH be sent to your account.
 
 ### 2 - Connect Wallet
 
