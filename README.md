@@ -41,7 +41,7 @@ You'll need to [sign up](https://app.infura.io/register?utm_source=github&utm_me
 
 Add your Infura project IDs and Secrets to the `.env` file.
 
-We'll be using the [Goerli](https://goerli.etherscan.io/) testnet.
+We'll be using the [Sepolia](https://sepolia.etherscan.io/) testnet.
 
 Install dotenv:
 ```
@@ -53,7 +53,7 @@ Setup your .env file:
 ```
 
   # Send Transaction Variables
-  NEXT_PUBLIC_WEB3_TEST_ETHEREUM_NETWORK=goerli
+  NEXT_PUBLIC_WEB3_TEST_ETHEREUM_NETWORK=sepolia
   NEXT_PUBLIC_WEB3_INFURA_API_KEY=[Your WEB3 Infura Project]
 
   # IPFS Variables
@@ -64,7 +64,7 @@ Setup your .env file:
   # Minting Variables
   WALLET_MNEMONIC=
   NEXT_PUBLIC_MINTING_INFURA_PROJECT_ID=[Your WEB3 Infura Project]
-  NEXT_PUBLIC_SMART_CONTRACT_ADDRESS=[The hash of the deployed contract on goerli]
+  NEXT_PUBLIC_SMART_CONTRACT_ADDRESS=[The hash of the deployed contract on sepolia]
 ```
 
 ### 3. Run the Project
@@ -79,7 +79,7 @@ In this project the user will connect their MetaMask wallet, send a transaction,
 
 ### 1 - Fund Your Wallet With Testnet Ether
 
-In your MetaMask wallet, switch to the `Goerli Test Network` (you may have to click "show/hide test networks" and toggle the setting to see the Goerli network)
+In your MetaMask wallet, switch to the `Sepolia Test Network` (you may have to click "show/hide test networks" and toggle the setting to see the Sepolia network)
 
 Go to our free Infura Faucet, https://www.infura.io/faucet, enter your wallet address, and then request Sepolia testnet ETH be sent to your account.
 
