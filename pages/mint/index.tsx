@@ -50,12 +50,12 @@ const Home: NextPage = () => {
                 </li>
                 <li>
                   For this project, you'll need a MetaMask wallet on the{' '}
-                  <code>Goerli Test Network</code> funded with some{' '}
+                  <code>Sepolia Test Network</code> funded with some{' '}
                   <Link
                     target="_blank"
-                    href="https://goerli-faucet.mudit.blog/?__cf_chl_tk=XldAqBU.zw8AEgAx1fl94upLkcvF8SKjiI.QKkBklHc-1669245985-0-gaNycGzNCmU"
+                    href="https://www.infura.io/faucet"
                   >
-                    testnet ETH
+                    Infura Testnet ETH Faucet
                   </Link>
                   , and an Infura account with an Ethereum project and an IPFS
                   project. If you've been following this series of tutorials,
