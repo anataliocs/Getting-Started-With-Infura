@@ -53,7 +53,7 @@ const Home: NextPage = () => {
                   <code>Sepolia Test Network</code> funded with some{' '}
                   <Link
                     target="_blank"
-                    href="https://www.infura.io/faucet"
+                    href="https://www.infura.io/faucet/sepolia"
                   >
                     Infura Testnet ETH Faucet
                   </Link>

@@ -54,7 +54,7 @@ export const TransactionSettingsModal = ({
             Send a Transaction Tutorial
           </Link>
           <Link
-            href="https://www.infura.io/faucet"
+            href="https://www.infura.io/faucet/sepolia"
             target="_blank"
             className={`group hover-within:text-white ${styles.settings__documentation_link}`}
           >

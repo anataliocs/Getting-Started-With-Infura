@@ -81,7 +81,7 @@ In this project the user will connect their MetaMask wallet, send a transaction,
 
 In your MetaMask wallet, switch to the `Sepolia Test Network` (you may have to click "show/hide test networks" and toggle the setting to see the Sepolia network)
 
-Go to our free Infura Faucet, https://www.infura.io/faucet, enter your wallet address, and then request Sepolia testnet ETH be sent to your account.
+Go to our free Infura Faucet, https://www.infura.io/faucet/sepolia, enter your wallet address, and then request Sepolia testnet ETH be sent to your account.
 
 ### 2 - Connect Wallet
 
@@ -215,7 +215,7 @@ In this project the user will deploy a smart contract using Truffle, upload to I
 
 In your MetaMask wallet, switch to the `Sepolia Test Network` (you may have to click "show/hide test networks" and toggle the setting to see the Goerli network)
 
-Go to https://www.infura.io/faucet, enter in your wallet address, and then request the test ETH
+Go to https://www.infura.io/faucet/sepolia, enter in your wallet address, and then request the test ETH
 
 ### 2 - Deploy a Smart Contract
 

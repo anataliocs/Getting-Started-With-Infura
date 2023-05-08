@@ -69,7 +69,7 @@ const Notifications: NextPage = () => {
                   wallet, switch to the <code>Goerli Test Network</code> (you
                   may have to click 'show/hide test networks' and toggle the
                   setting to see the Goerli network). Go to this{' '}
-                  <Link href="https://www.infura.io/faucet">
+                  <Link href="https://www.infura.io/faucet/sepolia">
                     Infura Testnet Faucet
                   </Link>
                   , connect your wallet, and then request the test ETH be sent
