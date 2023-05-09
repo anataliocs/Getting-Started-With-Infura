@@ -2,9 +2,9 @@ import { IPFSHTTPClient, create } from 'ipfs-http-client';
 
 const URL: string | undefined = process.env.NEXT_PUBLIC_INFURA_IPFS_ENDPOINT;
 const PROJECT_ID: string | undefined =
-  process.env.NEXT_PUBLIC_INFURA_IPFS_PROJECT_ID;
+  process.env.NEXT_PUBLIC_INFURA_IPFS_API_KEY;
 const PROJECT_SECRET: string | undefined =
-  process.env.NEXT_PUBLIC_INFURA_IPFS_PROJECT_SECRET;
+  process.env.NEXT_PUBLIC_INFURA_IPFS_API_KEY_SECRET;
 
 export const ipfs_client = (): IPFSHTTPClient | undefined => {
   if (!URL || !PROJECT_ID || !PROJECT_SECRET) {

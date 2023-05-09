@@ -58,12 +58,12 @@ Setup your .env file:
 
   # IPFS Variables
   NEXT_PUBLIC_INFURA_IPFS_ENDPOINT=https://ipfs.infura.io:5001
-  NEXT_PUBLIC_INFURA_IPFS_PROJECT_ID=[Your IPFS Infura Project ID]
-  NEXT_PUBLIC_INFURA_IPFS_PROJECT_SECRET=[Your IPFS Infura Project Secret]
+  NEXT_PUBLIC_INFURA_IPFS_API_KEY=[Your IPFS Infura Project ID]
+  NEXT_PUBLIC_INFURA_IPFS_API_KEY_SECRET=[Your IPFS Infura Project Secret]
 
   # Minting Variables
   WALLET_MNEMONIC=
-  NEXT_PUBLIC_MINTING_INFURA_PROJECT_ID=[Your WEB3 Infura Project]
+  NEXT_PUBLIC_MINTING_INFURA_API_KEY=[Your WEB3 Infura Project]
   NEXT_PUBLIC_SMART_CONTRACT_ADDRESS=[The hash of the deployed contract on sepolia]
 ```
 
@@ -117,8 +117,8 @@ Add the values from your Infura dashboard for these three environment variables.
 
   # IPFS Variables
   NEXT_PUBLIC_INFURA_IPFS_ENDPOINT=
-  NEXT_PUBLIC_INFURA_IPFS_PROJECT_ID=
-  NEXT_PUBLIC_INFURA_IPFS_PROJECT_SECRET=
+  NEXT_PUBLIC_INFURA_IPFS_API_KEY=
+  NEXT_PUBLIC_INFURA_IPFS_API_KEY_SECRET=
 ```
 
 ### 2 - Run the project
@@ -163,14 +163,14 @@ In this project, you will subscribe to a ETH address and recieve notifications f
 
 ### 1 - Project setup
 
-- Follow the primary application setup and fill in these env variables. Network should be `goerli`
+- Follow the primary application setup and fill in these env variables. Network should be `sepolia`
 
   ```bash
-  NEXT_PUBLIC_WEB3_TEST_ETHEREUM_NETWORK=goerli
+  NEXT_PUBLIC_WEB3_TEST_ETHEREUM_NETWORK=sepolia
   NEXT_PUBLIC_WEB3_INFURA_API_KEY=[Your WEB3 Infura Project]
   ```
 
-- Install and setup a Metamask account, switch network to `goerli`
+- Install and setup a Metamask account, switch network to `sepolia`
 - Install project dependencies
 
   ```bash
@@ -213,7 +213,7 @@ In this project the user will deploy a smart contract using Truffle, upload to I
 
 ### 1 - Fund your wallet
 
-In your MetaMask wallet, switch to the `Sepolia Test Network` (you may have to click "show/hide test networks" and toggle the setting to see the Goerli network)
+In your MetaMask wallet, switch to the `Sepolia Test Network` (you may have to click "show/hide test networks" and toggle the setting to see the Sepolia network)
 
 Go to https://www.infura.io/faucet/sepolia, enter in your wallet address, and then request the test ETH
 
@@ -225,13 +225,13 @@ Go to https://www.infura.io/faucet/sepolia, enter in your wallet address, and th
 
    The truffle project has already been initialized so you'll see `contracts/`, `migrations/`, and `truffle-config.js` already in the project structure.
 
-2. Add your wallet mnemonic (the twelve-word phrase the wallet uses to generate public/private key pairs) and your Infura project ID for an Ethereum project (this can be the same project ID as the Send Transaction Project) to your environment variables. We'll use the goerli network for this example so you can preview your minted nft on OpenSea Testnets.
+2. Add your wallet mnemonic (the twelve-word phrase the wallet uses to generate public/private key pairs) and your Infura project ID for an Ethereum project (this can be the same project ID as the Send Transaction Project) to your environment variables. We'll use the sepolia network for this example so you can preview your minted nft on OpenSea Testnets.
 
    ```bash
 
    # Minting Variables
     WALLET_MNEMONIC=
-    NEXT_PUBLIC_MINTING_INFURA_PROJECT_ID=[Your WEB3 Infura Project]
+    NEXT_PUBLIC_MINTING_INFURA_WEB3_API_KEY=[Your WEB3 Infura Project]
    ```
 
    **IMPORTANT:** Be careful not to share or commit your wallet mnemonic, it can be used to access your wallet accounts and their contents.
@@ -251,7 +251,7 @@ Go to https://www.infura.io/faucet/sepolia, enter in your wallet address, and th
 5. Migrate the smart contract onto the chain by running
 
    ```bash
-   truffle migrate --network goerli
+   truffle migrate --network sepolia
    ```
 
    **IMPORTANT:** After your migration completes, copy the `contract address` in the cli output and add it to your environment variables
@@ -260,7 +260,7 @@ Go to https://www.infura.io/faucet/sepolia, enter in your wallet address, and th
 
    # Minting Variables
    WALLET_MNEMONIC=
-   NEXT_PUBLIC_MINTING_INFURA_PROJECT_ID=
+   NEXT_PUBLIC_MINTING_INFURA_WEB3_API_KEY=
    NEXT_PUBLIC_SMART_CONTRACT_ADDRESS=
    ```
 

@@ -26,18 +26,18 @@ export const IpfsSettingsModal = ({
     >
       <div className={styles.settings__container}>
         <h2 className={styles.settings__heading}>Connection Info</h2>
-        {process.env.NEXT_PUBLIC_MINTING_INFURA_PROJECT_ID && (
+        {process.env.NEXT_PUBLIC_MINTING_INFURA_API_KEY && (
           <ReadOnly
             label="Ethereum Project ID"
-            value={process.env.NEXT_PUBLIC_MINTING_INFURA_PROJECT_ID}
+            value={process.env.NEXT_PUBLIC_MINTING_INFURA_API_KEY}
             hideable
             copyable
           />
         )}
-        {process.env.NEXT_PUBLIC_INFURA_IPFS_PROJECT_ID && (
+        {process.env.NEXT_PUBLIC_INFURA_IPFS_API_KEY && (
           <ReadOnly
             label="IPFS Project ID"
-            value={process.env.NEXT_PUBLIC_INFURA_IPFS_PROJECT_ID}
+            value={process.env.NEXT_PUBLIC_INFURA_IPFS_API_KEY}
             hideable
             copyable
           />

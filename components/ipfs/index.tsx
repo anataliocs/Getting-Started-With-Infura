@@ -29,15 +29,15 @@ export const IpfsSettingsModal = ({
         {process.env.NEXT_PUBLIC_INFURA_IPFS_PROJECT_ID && (
           <ReadOnly
             label="Project ID"
-            value={process.env.NEXT_PUBLIC_INFURA_IPFS_PROJECT_ID}
+            value={process.env.NEXT_PUBLIC_INFURA_IPFS_API_KEY}
             hideable
             copyable
           />
         )}
-        {process.env.NEXT_PUBLIC_INFURA_IPFS_PROJECT_SECRET && (
+        {process.env.NEXT_PUBLIC_INFURA_IPFS_API_KEY_SECRET && (
           <ReadOnly
             label="Project Secret"
-            value={process.env.NEXT_PUBLIC_INFURA_IPFS_PROJECT_SECRET}
+            value={process.env.NEXT_PUBLIC_INFURA_IPFS_API_KEY_SECRET}
             hideable
             copyable
           />

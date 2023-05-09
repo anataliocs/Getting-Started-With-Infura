@@ -160,7 +160,7 @@ const Mint: NextPage = () => {
 
         <div className="mt-10">
           <Link
-            href={`https://goerli.etherscan.io/tx/${transactionHash}`}
+            href={`https://sepolia.etherscan.io/tx/${transactionHash}`}
             className={
               'mt-3 flex flex-row items-center justify-start hover-within:text-white'
             }
@@ -170,7 +170,7 @@ const Mint: NextPage = () => {
             <ChevronRight />
           </Link>
           <Link
-            href={`https://goerli.etherscan.io/address/${
+            href={`https://sepolia.etherscan.io/address/${
               transactionDetails?.to ||
               process.env.NEXT_PUBLIC_SMART_CONTRACT_ADDRESS
             }`}

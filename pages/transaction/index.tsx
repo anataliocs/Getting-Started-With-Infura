@@ -60,9 +60,9 @@ const Home: NextPage = () => {
                 </li>
                 <li>
                   Fund your wallet with some testnet ETH. In your MetaMask
-                  wallet, switch to the <code>Goerli Test Network</code> (you
+                  wallet, switch to the <code>Sepolia Test Network</code> (you
                   may have to click 'show/hide test networks' and toggle the
-                  setting to see the Goerli network). Go to this{' '}
+                  setting to see the Sepolia network). Go to this{' '}
                   <Link href="https://www.infura.io/faucet/sepolia">
                     Infura Sepolia Testnet Faucet
                   </Link>
