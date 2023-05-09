@@ -26,7 +26,7 @@ export const IpfsSettingsModal = ({
     >
       <div className={styles.settings__container}>
         <h2 className={styles.settings__heading}>Connection Info</h2>
-        {process.env.NEXT_PUBLIC_INFURA_IPFS_PROJECT_ID && (
+        {process.env.NEXT_PUBLIC_INFURA_IPFS_API_KEY && (
           <ReadOnly
             label="Project ID"
             value={process.env.NEXT_PUBLIC_INFURA_IPFS_API_KEY}
