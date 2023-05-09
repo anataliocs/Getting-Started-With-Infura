@@ -37,44 +37,10 @@ const Pay: NextPage = () => {
     }
 
     setIsLoading(true);
-    try {
-      const ethereum = window.ethereum;
-      const amt = Number(Number(transferAmount) * 1e18).toString(16);
-
-      const txHash = await ethereum.request({
-        method: 'eth_sendTransaction',
-        params: [
-          {
-            from: account,
-            to: transferToAddress,
-            value: amt,
-          },
-        ],
-      });
-
-      const transaction = await Web3.eth.getTransaction(txHash);
-
-      if (transaction) {
-        useTransactionStore.setState({
-          transaction: transaction,
-        });
-
-        setError('');
-        setIsLoading(false);
-      }
-    } catch (err: unknown | AxiosError) {
-      if (axios.isAxiosError(err)) {
-        const axiosErr = err as AxiosError;
-        const response = axiosErr.response;
-        setError(response?.data.message);
-      } else {
-        const e = err as Error;
-        setError(e.message);
-      }
-      useTransactionStore.setState({ transaction: undefined });
-      setIsLoading(false);
-    }
-  };
+    {/*
+        Challenge 5:  Create a function that executes an eth_sendTransaction request that sends
+        Ether to the destination address entered into the input box.
+    */}
 
   return (
     <div>
@@ -123,47 +89,16 @@ const Pay: NextPage = () => {
             ) : (
               <>
                 <h1 className={styles.card__title}>Transfer ETH</h1>
-                <form
-                  className={styles.card__form}
-                  onSubmit={handleTransactionSubmit}
-                >
-                  <TextInput
-                    label="Address"
-                    id="toAddress"
-                    value={transferToAddress}
-                    onChange={(event) => {
-                      const target = event.target as HTMLInputElement;
-                      setTransferToAddress(target.value);
-                    }}
-                    helperText="The address you want to send ETH to"
-                    containerClassName={styles.card__input}
-                    labelClassName={styles.card__input1_label}
-                  />
-                  <TextInput
-                    label="Amount"
-                    id="amount"
-                    type="number"
-                    value={transferAmount}
-                    onChange={(event) => {
-                      const target = event.target as HTMLInputElement;
-                      setTransferAmount(target.value);
-                    }}
-                    helperText="Enter the amount in ETH"
-                    containerClassName={styles.card__input}
-                    labelClassName={styles.card__input2_label}
-                    step="any"
-                  />
-                  <PrimaryButton
-                    className={styles.card__button}
-                    type="submit"
-                    disabled={
-                      isLoading || !transferToAddress || !transferAmount
-                    }
-                    isLoading={isLoading}
-                  >
-                    Submit
-                  </PrimaryButton>
-                </form>
+
+                {/*
+                    Challenge 4:  Create a form to initiate a transaction.  Create two input boxes,
+                    one for the destination address and the second for the amount to send in Ether.
+
+                    Then define a onSubmit handler that calls the function defined in Challenge 5.
+
+                */}
+
+
               </>
             )}
           </div>

@@ -9,23 +9,11 @@ interface ResponseError {
   message: string;
 }
 
-export default async function handler(
-  req: NextApiRequest,
-  res: NextApiResponse<Data | ResponseError>
-) {
-  if (req.method !== 'POST') {
-    return res.status(405).json({
-      message: 'Only POST requests allowed',
-    });
-  }
+/*
+    Challenge 3:  Create an API Route with a Next.js Request handler for a POST request at the endpoint
+    /transactions/getBalance that accepts a parameter, account address in the request body.
+    Use the web3.js function getBalance() to look up the balance of that account address in wei
+    then convert the value in wei to Ether and return a 200 OK with the balance.
+ */
 
-  const { accountAddress } = req.body;
 
-  const balanceWei = await web3.eth.getBalance(accountAddress);
-  const balanceEther = await web3.utils.fromWei(balanceWei, 'ether');
-  const balanceEtherNumber: number = +balanceEther;
-
-  return res.status(200).json({
-    balance: balanceEtherNumber,
-  });
-}
