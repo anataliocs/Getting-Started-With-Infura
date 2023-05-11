@@ -1,6 +1,7 @@
 # Getting Started with Infura Sample Projects
 
-- Sample Project 1 - Send Transaction
+- Sample Project 1a - Send Transaction on Sepolia
+- Sample Project 1b - Send Transaction on Polygon Mumbai
 - Sample Project 2 - IPFS
 - Sample Project 3 - Notifications
 - Sample Project 4 - Minting an NFT
@@ -73,7 +74,7 @@ Setup your .env file:
   yarn dev
 ```
 
-# Sample Project 1 - Send Transaction
+# Sample Project 1a - Send Transaction on Sepolia
 
 In this project the user will connect their MetaMask wallet, send a transaction, and then review a transaction, all using the [Infura](https://infura.io) API.
 
@@ -104,6 +105,39 @@ When the transaction is mined you'll see a confirmation screen with the `transac
 Paste your transaction hash from the previous step and click `Review`
 
 You should then see the transaction details.
+
+# Sample Project 1b - Send Transaction on Sepolia
+
+Follow the same steps as in Project 1a but with the following changes.
+
+### 1 - Update .env file
+
+```
+  # Send Transaction Variables
+  NEXT_PUBLIC_WEB3_TEST_ETHEREUM_NETWORK=polygon-mumbai
+```
+
+### 2 - Add Polygon Mumbai Testnet Matic to Metamask
+
+First, click the network dropdown then click “Add network.”
+
+Then click “Add a network manually.”
+
+Enter in the following parameters:
+Network Name:  Polygon Mumbai
+New RPC URL:  https://rpc-mumbai.maticvigil.com/
+Chain ID: 80001
+Currency Symbol:  MATIC
+Block Explorer URL:  https://mumbai.polygonscan.com/
+
+
+### 3 - Fund Your Wallet With Polygon Mumbai Testnet Matic
+
+In your MetaMask wallet, switch to the `Polygon Mumbai Network` (you may have to click "show/hide test networks" and toggle the setting to see the Sepolia network)
+
+Go to the Polygon Faucet, https://faucet.polygon.technology/, enter your wallet address, and then request Mumbai testnet MATIC to be sent to your account.
+
+Then follow the same steps as in Project 1a to send a Polygon Mumbai transaction.
 
 # Sample Project 2 - Upload to IPFS
 
