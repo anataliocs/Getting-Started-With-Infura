@@ -321,3 +321,16 @@ Visit the IPFS documentation above for more details.
 on the `http://localhost:3000/mint/mint` page, paste the token URI you copied in the previous step into the input field. Press submit and wait as your NFT is minted. The results will be displayed when the process is complete.
 
 You can view your collection on OpenSea by searching for the contract address on [OpenSea's Testnet site](https://testnets.opensea.io/)
+
+
+# Working with NFTs with Traditional Web2 REST APIs
+
+You can also use the Infura NFT API and SDK to mint NFTs without the need for smart contracts using our REST API.
+
+You can learn more about using the [NFT API and SDK with this hands-on coding tutorial video](https://www.youtube.com/watch?v=FrR9bF6S_fg)
+
+Hands-On Getting Started with the Infura NFT API and SDK Technical Guide
+
+You can learn more about [NFT standards such as ERC-721 and ERC-1155](https://blog.infura.io/post/comparing-nft-standards-erc-721-vs-erc-721a-vs-erc-1155) in another article on the Infura blog!
+
+Interested in learning more about the basics of NFTs?  Check out our video, [NFT Crash Course](https://www.youtube.com/watch?v=fXEIUREpDgA), featured on Microsoft Inspire 2022.
